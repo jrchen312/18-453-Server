@@ -1,0 +1,27 @@
+<!-- chat/templates/chat/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>jeff's webserver</title>
+</head>
+<body>
+
+    <div>
+        <h3>Hello</h3>
+        <p>This is the webserver for the game. There is no security in place.</p>
+
+        <p>Here is link to chat room <a href="{% url 'index' %}">from the tutorial</a>.</p>
+    </div>
+
+
+    <div>
+        <h3>Some "documentation"</h3>
+
+        {% for test in documentation %}
+            
+        {% endfor %}
+        <p> wip </p>
+    </div>
+</body>
+</html>
