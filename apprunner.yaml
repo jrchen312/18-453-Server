@@ -3,8 +3,10 @@ runtime: python3
 build:
   commands:
     build:
-      - pip install --upgrade pip --root-user-action=ignore
-      - pip install -r requirements.txt --root-user-action=ignore
+      - pip install -r requirements.txt
+    env:
+    - name: DJANGO_SETTINGS_MODULE
+      value: "django_apprunner.settings"
 run:
   runtime-version: 3.8.16
   command: sh startup.sh
