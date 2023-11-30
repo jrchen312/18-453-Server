@@ -3,6 +3,8 @@ runtime: python3
 build:
   commands:
     build:
+      - python -m venv env
+      - source env/bin/activate
       - pip install -r requirements.txt
   env:
     - name: DJANGO_SETTINGS_MODULE
