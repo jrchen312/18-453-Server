@@ -4,7 +4,7 @@ build:
   commands:
     build:
       - pip install -r requirements.txt
-    env:
+  env:
     - name: DJANGO_SETTINGS_MODULE
       value: "django_apprunner.settings"
 run:
