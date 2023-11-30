@@ -3,7 +3,8 @@ runtime: python3
 build:
   commands:
     build:
-      - pip install -r requirements.txt
+      - pip install --upgrade pip
+      - pip install -r requirements.txt --root-user-action=ignore
 run:
   runtime-version: 3.8.16
   command: sh startup.sh
